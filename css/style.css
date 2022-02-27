@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../fonts/ubuntu.woff) format(woff);
+    src: url(../fonts/ubuntu.woff2) format(woff2);
+    font-weight: regular;
+	font-style: normal;
+}
+body {
+    width: 100%;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    background-image: url(../images/background.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    position: absolute;
+    left: -8px;
+    top: -8px;      
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header{
+    height: 80px;
+    width:100%;
+    background-color: #f7033c;
+    display: flex;    
+}
+
+  
+.ws{
+    font-size: 40px;
+    padding-left: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__item+.list__item{
+    margin-left: 30px;
+}
+.list__link{
+    position: relative;
+}
+.list__link:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    transition: width 0.5s;
+}
+.list__link:hover:after, .list__link:focus:after{
+    width: 100%;
+}
+.text{
+    font-size: 48px;
+    font-family: "Ubuntu";
+    color: rgb(86, 86, 86);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 3%;
+    top: 7%;
+    width: 527px;
+    height: 162px;
+    z-index: 24;
+}
+.team{
+    background-image: url(../images/block.png);
+    background-position: top;
+    width: 100%;
+    display: flex;
+}
+.inf{
+    display: block;
+    text-align: center;
+
+}
+.inf__title {
+    font-size: 30px;
+    color: rgb(255, 51, 51);
+    line-height: 1.2;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+.line{
+    display: block;
+    margin-top: -20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95px;
+    height: 3px;
+    background-color: rgb(255, 51, 51);
+}
+
+.inf__content{
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    width: 660px;
+    padding-bottom: 56px;
+}
+
+.table__team{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.tt+.tt{
+    margin-left: 40px;
+}
+
+.first{
+    background-image: url(../images/1tr.png);
+    width: 220px;
+    height: 220px;
+    margin-left: -40px;
+}
+.second{
+    background-image: url(../images/2tr.png);
+    width: 220px;
+    height: 220px;
+}
+.third{
+    background-image: url(../images/3tr.png);
+    width: 220px;
+    height: 220px;
+}
+.name{
+    padding-top: 70%;
+    font-weight: 700;
+    color: rgb(255, 51, 51);
+    margin: 0;
+
+}
+.vst{
+    color: black;
+    margin: 0;
+    font-weight: 600;
+
+}
+
+.forma+.forma{
+    margin-left: 20px;
+}
+.forma{
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 120px;
+    margin-left: -20px;
+}
+
+.forma__img{
+    margin:0px 40px;
+}
+.forma__title{
+    margin:0;    
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    line-height: 1.125;
+}
+
+
+
+.footer{
+    background-color: #f7033c;
+    display:block;
+    margin-top: -20px;
+}
+
+.footer__line{
+    display: flex;
+    height: 134px;
+    width: 100%;
+    top: 8px;
+}
+.pp{
+    font-size: 14px;
+    line-height: 1.2;
+    left: 40px;
+    margin-bottom: 0%;
+    margin-top: 85px;
+    margin-left: -200px;
+}
+
+@media (max-width:1060px) {
+    .text{
+        font-size: 36px;
+        line-height: 0.8;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width:780px){
+    .text{
+        position: absolute;
+        left: 3%;
+        top: 5%;
+        font-size: 36px;
+        width: 400px;
+        height: auto;
+    }
+    .inf__content{
+        width: 400px;
+    }
+    .table__team{
+        display:block;
+        margin-left: 52.5%;
+        transform: translateX(-50%);
+    }
+    
+    .forma,
+    .tt+.tt,
+    .forma+.forma,
+    .first{
+        margin-left: 0;
+    }
+    .forma__img,
+    .forma__title{
+        display:block;
+        margin-left: 50%;
+    }
+    .forma__title{
+        width: 200px;
+        transform: translateX(-37%);
+    }
+    .forma,
+    .tt{
+        margin-bottom: 20px;
+    }
+    .header,
+    .footer__line,
+    .pp{
+        height: 40;
+        font-size: 0.7em;
+    }
+    .header{
+        height: 40px;
+    }
+    .footer__line{
+        height: 100px;
+    }
+    .ws{
+        font-size: 32px;
+    }
+    .pp{
+        margin-top: 70px;
+        margin-left: -130px;
+    }
+}
+@media(max-width:540px){
+    .text{
+        position: absolute;
+        left: 3%;
+        top: 2%;
+        font-size: 24px;
+        width: 100px;
+        height: auto;
+    }
+    .inf__content{
+        width: 400px;
+    }
+    .table__team{
+        display:block;
+        margin-left: 45%;
+        transform: translateX(-50%);
+    }
+    
+    .forma,
+    .tt+.tt,
+    .forma+.forma,
+    .first{
+        margin-left: 0;
+    }
+    .forma__img,
+    .forma__title{
+        display:block;
+        margin-left: 50%;
+    }
+    .forma__title{
+        width: 200px;
+        transform: translateX(-37%);
+    }
+    .forma,
+    .tt{
+        margin-bottom: 20px;
+    }
+    .header,
+    .footer__line,
+    .pp{
+        height: 40;
+        font-size: 0.7em;
+    }
+    .header{
+        height: 40px;
+    }
+    .footer__line{
+        height: 100px;
+    }
+    .ws{
+        margin-left: -50px;
+    font-size: 20px;
+    width: -webkit-fill-available;
+    }
+    .pp{
+        margin-top: 64px;
+        margin-left: -100px;
+        width: -webkit-fill-available;
+        display: none;
+    }
+    .list__item+.list__item{
+        margin-left: 10px;
+    }
+}
+@media(max-width:320px){
+    .text{
+        position: absolute;
+        left: 3%;
+        top: 2%;
+        font-size: 20px;
+        width: 100px;
+        height: auto;
+    }
+    .inf__content{
+        width: 300px;
+    }
+    .table__team{
+        display:block;
+        margin-left: 39%;
+        transform: translateX(-50%);
+    }
+    
+    .forma,
+    .tt+.tt,
+    .forma+.forma,
+    .first{
+        margin-left: 0;
+    }
+    .forma__img,
+    .forma__title{
+        display:block;
+        margin-left: 50%;
+    }
+    .forma__title{
+        width: 200px;
+        transform: translateX(-37%);
+    }
+    .forma,
+    .tt{
+        margin-bottom: 20px;
+    }
+    .header,
+    .footer__line,
+    .pp{
+        height: 40;
+        font-size: 0.7em;
+    }
+    .header{
+        height: 40px;
+    }
+    .footer__line{
+        height: 80px;
+    }
+    .ws{
+        margin-left: -50px;
+    font-size: 12px;
+    width: -webkit-fill-available;
+    }
+    .pp{
+        margin-top: 64px;
+        margin-left: -30px;
+        display: none;
+        width: -webkit-fill-available;
+    }
+    .list__item+.list__item{
+        margin-left: 10px;
+    }
+    .body{
+        left: 0;
+        top: 0;
+    }
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 26px 0 -40px;
+}
