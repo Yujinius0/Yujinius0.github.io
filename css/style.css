@@ -1,20 +1,22 @@
-@font-face {
-    font-family: 'Ubuntu';
-    src: url(../fonts/ubuntu.woff) format(woff);
-    src: url(../fonts/ubuntu.woff2) format(woff2);
-    font-weight: regular;
-	font-style: normal;
-}
 body {
     width: 100%;
     font-family: 'Ubuntu';
     font-weight: normal;
-    background-image: url(../images/background.png);
-    background-size: 100%;
-    background-repeat: repeat-y;
-    position: absolute;
-    left: -8px;
-    top: -8px;      
+    background-color: #f7033c;
+}
+
+.content{
+    width: 1020px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    background-color: #fff;
+    background-size: 1024px;
+    background-repeat:repeat-y;
+    background-position:center;
+    position:absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: -8px;
 }
 
 a{
@@ -24,14 +26,14 @@ a{
 }
 
 .header{
+    width:100%;
     height: 80px;
     width:100%;
     background-color: #f7033c;
-    display: flex;    
+    display: flex;
 }
-
   
-.ws{
+.logo{
     font-size: 40px;
     padding-left: 57px;
     display: flex;
@@ -52,9 +54,11 @@ ul{
 .list__item+.list__item{
     margin-left: 30px;
 }
+
 .list__link{
     position: relative;
 }
+
 .list__link:after{
     display: block;
     position: absolute;
@@ -65,9 +69,12 @@ ul{
     content: "";
     transition: width 0.5s;
 }
-.list__link:hover:after, .list__link:focus:after{
+
+.list__link:hover:after,
+.list__link:focus:after{
     width: 100%;
 }
+
 .text{
     font-size: 48px;
     font-family: "Ubuntu";
@@ -75,23 +82,30 @@ ul{
     line-height: 1.2;
     text-align: left;
     position: absolute;
-    left: 3%;
-    top: 7%;
-    width: 527px;
+    left: 36.938px;
+    top: 127.761px;
+    width: 570px;
     height: 162px;
-    z-index: 24;
+    z-index: 27;
 }
+
+.top{
+    background-color: #bde9fc;
+    height:645px;
+    width:100%;
+}
+
 .team{
-    background-image: url(../images/block.png);
-    background-position: top;
-    width: 100%;
-    display: flex;
+    height:688px;
+    width:100%;
 }
+
 .inf{
     display: block;
     text-align: center;
-
+    padding-top:40px;
 }
+
 .inf__title {
     font-size: 30px;
     color: rgb(255, 51, 51);
@@ -100,6 +114,7 @@ ul{
     transform: translateX(-50%);
     margin-bottom: 30px;
 }
+
 .line{
     display: block;
     margin-top: -20px;
@@ -113,8 +128,7 @@ ul{
 
 .inf__content{
     display: flex;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: 180px;
     font-size: 20px;
     color: rgb(0, 0, 0);
     line-height: 1.2;
@@ -125,12 +139,13 @@ ul{
 .table__team{
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    margin-left:200px;
     font-size: 17px;
     padding-bottom: 20px;
 }
+
 .tt+.tt{
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .first{
@@ -139,6 +154,7 @@ ul{
     height: 220px;
     margin-left: -40px;
 }
+
 .second{
     background-image: url(../images/2tr.png);
     width: 220px;
@@ -149,34 +165,40 @@ ul{
     width: 220px;
     height: 220px;
 }
+
 .name{
     padding-top: 70%;
     font-weight: 700;
     color: rgb(255, 51, 51);
     margin: 0;
-
 }
-.vst{
+
+.vrst{
     color: black;
     margin: 0;
     font-weight: 600;
+}
 
+.table__forma{
+    display:flex;
+    padding-bottom:40px;
+    margin-left:170px;
 }
 
 .forma+.forma{
     margin-left: 20px;
 }
+
 .forma{
-    align-items: center;
-    justify-content: center;
-    width: 160px;
+    width: 140px;
     height: 120px;
     margin-left: -20px;
 }
 
 .forma__img{
-    margin:0px 40px;
+   /*margin:0px 40px;*/
 }
+
 .forma__title{
     margin:0;    
     font-size: 16px;
@@ -184,8 +206,6 @@ ul{
     color: rgb(0, 0, 0);
     line-height: 1.125;
 }
-
-
 
 .footer{
     background-color: #f7033c;
@@ -199,7 +219,8 @@ ul{
     width: 100%;
     top: 8px;
 }
-.pp{
+
+.inline{
     font-size: 14px;
     line-height: 1.2;
     left: 40px;
@@ -226,9 +247,11 @@ ul{
         width: 400px;
         height: auto;
     }
+
     .inf__content{
         width: 400px;
     }
+
     .table__team{
         display:block;
         margin-left: 52.5%;
@@ -241,39 +264,48 @@ ul{
     .first{
         margin-left: 0;
     }
+
     .forma__img,
     .forma__title{
         display:block;
         margin-left: 50%;
     }
+
     .forma__title{
         width: 200px;
         transform: translateX(-37%);
     }
+
     .forma,
     .tt{
         margin-bottom: 20px;
     }
+
     .header,
     .footer__line,
     .pp{
         height: 40;
         font-size: 0.7em;
     }
+
     .header{
         height: 40px;
     }
+
     .footer__line{
         height: 100px;
     }
-    .ws{
+
+    .logo{
         font-size: 32px;
     }
-    .pp{
+
+    .inline{
         margin-top: 70px;
         margin-left: -130px;
     }
 }
+
 @media(max-width:540px){
     .text{
         position: absolute;
@@ -283,9 +315,11 @@ ul{
         width: 100px;
         height: auto;
     }
+
     .inf__content{
         width: 400px;
     }
+
     .table__team{
         display:block;
         margin-left: 45%;
@@ -298,46 +332,56 @@ ul{
     .first{
         margin-left: 0;
     }
+
     .forma__img,
     .forma__title{
         display:block;
         margin-left: 50%;
     }
+
     .forma__title{
         width: 200px;
         transform: translateX(-37%);
     }
+
     .forma,
     .tt{
         margin-bottom: 20px;
     }
+
     .header,
     .footer__line,
     .pp{
         height: 40;
         font-size: 0.7em;
     }
+
     .header{
         height: 40px;
     }
+
     .footer__line{
         height: 100px;
     }
-    .ws{
+
+    .logo{
         margin-left: -50px;
     font-size: 20px;
     width: -webkit-fill-available;
     }
-    .pp{
+
+    .inline{
         margin-top: 64px;
         margin-left: -100px;
         width: -webkit-fill-available;
         display: none;
     }
+
     .list__item+.list__item{
         margin-left: 10px;
     }
 }
+
 @media(max-width:320px){
     .text{
         position: absolute;
@@ -347,9 +391,11 @@ ul{
         width: 100px;
         height: auto;
     }
+
     .inf__content{
         width: 300px;
     }
+
     .table__team{
         display:block;
         margin-left: 39%;
@@ -362,52 +408,64 @@ ul{
     .first{
         margin-left: 0;
     }
+
     .forma__img,
     .forma__title{
         display:block;
         margin-left: 50%;
     }
+
     .forma__title{
         width: 200px;
         transform: translateX(-37%);
     }
+
     .forma,
     .tt{
         margin-bottom: 20px;
     }
+
     .header,
     .footer__line,
     .pp{
         height: 40;
         font-size: 0.7em;
     }
+
     .header{
         height: 40px;
     }
+
     .footer__line{
         height: 80px;
     }
-    .ws{
+
+    .logo{
         margin-left: -50px;
     font-size: 12px;
     width: -webkit-fill-available;
     }
-    .pp{
+
+    .inline{
         margin-top: 64px;
         margin-left: -30px;
         display: none;
         width: -webkit-fill-available;
     }
+
     .list__item+.list__item{
         margin-left: 10px;
     }
+
     .body{
         left: 0;
         top: 0;
     }
+
     .list {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 26px 0 -40px;
+    }
 }
