@@ -139,7 +139,7 @@ ul{
 .table__team{
     display:flex;
     padding-bottom:40px;
-    margin-left:170px;
+    margin-left:160px;
 }
 
 .tt+.tt{
@@ -217,7 +217,7 @@ ul{
 .table__forma{
     display:flex;
     padding-bottom:40px;
-    margin-left:200px;
+    margin-left:180px;
 }
 
 .forma+.forma{
