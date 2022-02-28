@@ -5,13 +5,13 @@ body {
     background-color: #f7033c;
 }
 
-.content{
+.content {
     width: 1020px;
     font-family: 'Ubuntu';
     font-weight: normal;
     background-color: #fff;
     background-size: 1024px;
-    background-repeat:repeat-y;
+    background-repeat: repeat-y;
     background-position:center;
     position:absolute;
     left: 50%;
