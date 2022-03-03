@@ -1,39 +1,41 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../fonts/ubuntu.woff) format('woff'), url(../fonts/ubuntu.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     width: 100%;
     font-family: 'Ubuntu';
     font-weight: normal;
-    background-color: #f7033c;
-}
-
-.content {
-    width: 1020px;
-    font-family: 'Ubuntu';
-    font-weight: normal;
     background-color: #fff;
-    background-size: 1024px;
-    background-repeat: repeat-y;
-    background-position:center;
-    position:absolute;
-    left: 50%;
-    transform:translateX(-50%);
-    top: -8px;
+    position: absolute;
+    left: -8px;
+    top:-8px
 }
 
-a{
+a {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
 }
 
-.header{
-    width:100%;
-    height: 80px;
-    width:100%;
+.header__bg {
     background-color: #f7033c;
+    width: 100%;
     display: flex;
 }
+
+.header {
+    background-color: #f7033c;
+    width: 1020px;
+    height: 80px;
+    display: flex;
+    
+}
   
-.logo{
+.logo {
     font-size: 40px;
     padding-left: 57px;
     display: flex;
@@ -41,25 +43,25 @@ a{
     align-items: center;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.list{
+.list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.list__item+.list__item{
+.list__item+.list__item {
     margin-left: 30px;
 }
 
-.list__link{
+.list__link {
     position: relative;
 }
 
-.list__link:after{
+.list__link:after {
     display: block;
     position: absolute;
     left: 0;
@@ -71,11 +73,18 @@ ul{
 }
 
 .list__link:hover:after,
-.list__link:focus:after{
+.list__link:focus:after {
     width: 100%;
 }
 
-.text{
+.section {
+    width: 1020px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
     font-size: 48px;
     font-family: "Ubuntu";
     color: rgb(86, 86, 86);
@@ -89,24 +98,24 @@ ul{
     z-index: 27;
 }
 
-.top{
+.top {
     background-color: #bde9fc;
-    height:645px;
-    width:100%;
+    height: 645px;
+    width: 100%;
 }
 
-.team{
-    height:688px;
-    width:100%;
+.team {
+    height: 688px;
+    width: 100%;
 }
 
-.inf{
+.info {
     display: block;
     text-align: center;
-    padding-top:40px;
+    padding-top: 40px;
 }
 
-.inf__title {
+.info__title {
     font-size: 30px;
     color: rgb(255, 51, 51);
     line-height: 1.2;
@@ -115,7 +124,7 @@ ul{
     margin-bottom: 30px;
 }
 
-.line{
+.line {
     display: block;
     margin-top: -20px;
     position: absolute;
@@ -126,7 +135,7 @@ ul{
     background-color: rgb(255, 51, 51);
 }
 
-.inf__content{
+.info__content {
     display: flex;
     margin-left: 180px;
     font-size: 20px;
@@ -136,17 +145,17 @@ ul{
     padding-bottom: 56px;
 }
 
-.table__team{
-    display:flex;
-    padding-bottom:40px;
-    margin-left:160px;
+.table__team {
+    display: flex;
+    padding-bottom: 40px;
+    margin-left: 160px;
 }
 
-.tt+.tt{
+.tt+.tt {
     margin-left: 20px;
 }
 
-.tt{
+.tt {
     display: flex;
     justify-content: center;
     background-color: #dddd;
@@ -154,7 +163,7 @@ ul{
     height: 220px;
 }
 
-.first{
+.first {
     background-image: url(../images/1tr.png);
     border-radius: 50%;
     width: 128px;
@@ -162,7 +171,7 @@ ul{
     margin-top: 12px;
 }
 
-.second{
+.second {
     background-image: url(../images/2tr.png);
     border-radius: 50%;
     width: 128px;
@@ -170,7 +179,7 @@ ul{
     margin-top: 12px;
 }
 
-.third{
+.third {
     background-image: url(../images/3tr.png);
     border-radius: 50%;
     width: 128px;
@@ -178,7 +187,7 @@ ul{
     margin-top: 12px;
 }
 
-.name__1{
+.name__1 {
     display: flex;
     padding-top: 140px;
     font-weight: 700;
@@ -188,7 +197,7 @@ ul{
     margin-left: -10px;
 }
 
-.name__2{
+.name__2 {
     display: flex;
     padding-top: 140px;
     font-weight: 700;
@@ -198,7 +207,7 @@ ul{
     margin-left: -22px;
 }
 
-.name__3{
+.name__3 {
     display: flex;
     padding-top: 140px;
     font-weight: 700;
@@ -208,50 +217,58 @@ ul{
     margin-left: -4px;
 }
 
-.vrst{
+.vrst {
     color: black;
     margin: 0;
     font-weight: 600;
 }
 
-.table__forma{
-    display:flex;
-    padding-bottom:40px;
-    margin-left:180px;
+.table__forma {
+    display: flex;
+    padding-bottom: 40px;
+    margin-left: 180px;
 }
 
-.forma+.forma{
+.forma+.forma {
     margin-left: 20px;
 }
 
-.forma{
+.forma {
     width: 140px;
     height: 120px;
     margin-left: -20px;
 }
 
-.forma__title{
-    margin:0;    
+.forma__title {
+    margin: 0;    
     font-size: 16px;
     font-weight: 600;
     color: rgb(0, 0, 0);
     line-height: 1.125;
 }
 
-.footer{
+.footer__bg {
+    display: flex;
+    margin-top: 1470px;
+    width: 100%;
     background-color: #f7033c;
-    display:block;
+    height: 134px;
+}
+
+.footer {
+    background-color: #f7033c;
+    display: block;
     margin-top: -20px;
 }
 
-.footer__line{
+.footer__line {
     display: flex;
     height: 134px;
     width: 100%;
     top: 8px;
 }
 
-.inline{
+.inline {
     font-size: 14px;
     line-height: 1.2;
     left: 40px;
