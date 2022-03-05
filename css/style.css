@@ -154,11 +154,11 @@ ul {
     margin-left: 160px;
 }
 
-.tt+.tt {
+.table__cell+.table__cell {
     margin-left: 20px;
 }
 
-.tt {
+.table__cell {
     display: flex;
     justify-content: center;
     background-color: #dddd;
@@ -220,7 +220,7 @@ ul {
     margin-left: -4px;
 }
 
-.vrst {
+.subtitle {
     color: black;
     margin: 0;
     font-weight: 600;
