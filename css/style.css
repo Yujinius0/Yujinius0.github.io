@@ -60,7 +60,7 @@ ul {
     text-transform: uppercase;
 }
 
-.list__link_active {
+.list__link--active {
     text-transform: uppercase;
     border-bottom: 2px solid #fff;
 }
