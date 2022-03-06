@@ -26,7 +26,7 @@ a {
     height: 80px;
 }
 
-.container {
+.header__container {
     width: 1020px;
     height: 80px;
     display: flex;
@@ -60,7 +60,7 @@ ul {
     text-transform: uppercase;
 }
 
-.list__link-active {
+.list__link_active {
     text-transform: uppercase;
     border-bottom: 2px solid #fff;
 }
@@ -249,20 +249,11 @@ ul {
 }
 
 .forma__title {
-    margin: 0;
-    width: 140px;
+    margin: 0;    
     font-size: 16px;
     font-weight: 600;
     color: rgb(0, 0, 0);
     line-height: 1.125;
-}
-
-.forma__title-cell {
-    margin: 0;
-}
-
-.forma__title-cell3{
-    margin-top: 16px;
 }
 
 .footer__bg {
