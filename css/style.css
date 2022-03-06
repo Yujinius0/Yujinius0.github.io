@@ -21,23 +21,18 @@ a {
     color: #fff;
 }
 
-.header__bg {
+.header {
     background-color: #f7033c;
-    width: 100%;
-    display: flex;
     height: 80px;
 }
 
-.header {
-    background-color: #f7033c;
+.container {
     width: 1020px;
     height: 80px;
     display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
 }
-  
+
 .logo {
     font-size: 40px;
     padding-left: 57px;
@@ -62,9 +57,21 @@ ul {
 
 .list__link {
     position: relative;
+    text-transform: uppercase;
 }
 
-.list__link:after {
+.list__link-active {
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+}
+
+.list__link::before {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.list__link::after {
     display: block;
     position: absolute;
     left: 0;
@@ -229,25 +236,33 @@ ul {
 .table__forma {
     display: flex;
     padding-bottom: 40px;
-    margin-left: 180px;
+    margin-left: 200px;
 }
 
 .forma+.forma {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .forma {
     width: 140px;
-    height: 120px;
     margin-left: -20px;
 }
 
 .forma__title {
-    margin: 0;    
+    margin: 0;
+    width: 140px;
     font-size: 16px;
     font-weight: 600;
     color: rgb(0, 0, 0);
     line-height: 1.125;
+}
+
+.forma__title-cell {
+    margin: 0;
+}
+
+.forma__title-cell3{
+    margin-top: 16px;
 }
 
 .footer__bg {
