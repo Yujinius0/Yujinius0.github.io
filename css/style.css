@@ -8,6 +8,7 @@
 body {
     font-family: 'Ubuntu';
     background-color: #fff;
+    margin:auto;
 }
 
 a {
@@ -22,7 +23,7 @@ a {
 
 .header__container {
     padding-left: 57px;
-    width: 1020px;
+    width: 963px;
     display: flex;
     margin: auto;
     height: 80px;
