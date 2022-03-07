@@ -26,6 +26,7 @@ a {
     width: 1020px;
     display: flex;
     margin: auto;
+    transform: translateY(15px);
 }
 
 .logo {
@@ -60,7 +61,6 @@ ul {
 
 .list__link:hover {
     border-bottom: 2px solid #fff;
-    transition: width 0.5s;
 }
 
 .section {
