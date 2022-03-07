@@ -26,9 +26,7 @@ a {
     width: 1020px;
     display: flex;
     margin: auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    height: inherit;
 }
 
 .logo {
