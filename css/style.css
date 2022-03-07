@@ -1,3 +1,12 @@
+html{
+    box-sizing:border-box
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
 @font-face {
     font-family: 'Ubuntu';
     src: url(../fonts/ubuntu.woff) format('woff'), url(../fonts/ubuntu.woff2) format('woff2');
@@ -26,7 +35,6 @@ a {
     display: flex;
     margin: auto;
     height: 80px;
-    box-sizing: border-box;
 }
 
 .logo {
