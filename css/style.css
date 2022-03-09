@@ -1,10 +1,9 @@
-html{
-    box-sizing:border-box
-}
 *,
 *::after,
-*::before{
-    box-sizing: inherit;
+*::before {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
 }
 
 @font-face {
