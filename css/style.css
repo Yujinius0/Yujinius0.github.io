@@ -71,13 +71,18 @@ ul {
     border-bottom: 2px solid #fff;
 }
 
-.text {
+.title {
+    font-weight: normal;
     font-size: 48px;
-    color: rgb(86, 86, 86);
+    color: #565656;
     line-height: 1.2;
     text-align: left;
     width: 570px;
     margin: 57px 0 0 40px;
+}
+
+.section {
+    width: 100%
 }
 
 .top {
@@ -85,16 +90,12 @@ ul {
 }
 
 .top__container {
-    height: 645px;
+    height: 672px;
     width: 1020px;
     display: flex;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.team {
-    position: absolute;
-    top: 0;
+    margin: auto;
+    background-image: url(../images/team.png);
+    background-size: 1020px;
 }
 
 .info {
