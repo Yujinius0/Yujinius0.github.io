@@ -71,36 +71,30 @@ ul {
     border-bottom: 2px solid #fff;
 }
 
-.section {
-    width: 1020px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.title {
+    font-weight: normal;
+    font-size: 48px;
+    color: #565656;
+    line-height: 1.2;
+    width: 570px;
+    margin: 57px 0 0 40px;
 }
 
-.text {
-    font-size: 48px;
-    font-family: "Ubuntu";
-    color: rgb(86, 86, 86);
-    line-height: 1.2;
-    text-align: left;
-    position: absolute;
-    left: 36.938px;
-    top: 10.761px;
-    width: 570px;
-    height: 162px;
-    z-index: 27;
+.main {
+    width: 100%
 }
 
 .top {
     background-color: #bde9fc;
-    height: 645px;
-    width: 100%;
 }
 
-.team {
-    height: 688px;
-    width: 100%;
+.top__container {
+    height: 672px;
+    width: 1020px;
+    display: flex;
+    margin: auto;
+    background-image: url(../images/team.png);
+    background-size: cover;
 }
 
 .info {
