@@ -77,24 +77,28 @@ ul {
     color: #565656;
     line-height: 1.2;
     width: 570px;
-    margin: 57px 0 0 40px;
+    margin: 57px auto auto 40px;
 }
 
 .main {
-    width: 100%
+    color:#000;
 }
 
 .top {
     background-color: #bde9fc;
 }
 
+.top__container--image{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .top__container {
-    height: 672px;
+    height: 640px;
     width: 1020px;
     display: flex;
     margin: auto;
-    background-image: url(../images/team.png);
-    background-size: cover;
 }
 
 .info {
@@ -236,7 +240,6 @@ ul {
 
 .footer__bg {
     display: flex;
-    margin-top: 1470px;
     width: 100%;
     background-color: #f7033c;
     height: 134px;
