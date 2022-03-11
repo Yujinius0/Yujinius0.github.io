@@ -88,13 +88,12 @@ ul {
     top: 0;
     height: 720px;
     width: 100%;
-    z-index: -1;
 }
 
 .top__image {
-    background-image: url(../images/team.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../images/team.png) center no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
 .top__container {
