@@ -76,25 +76,31 @@ ul {
     font-size: 48px;
     color: #565656;
     line-height: 1.2;
-    width: 570px;
+    width: 535px;
+    height: 170px;
     margin: 57px 0 0 40px;
 }
 
-.main {
-    width: 100%
+.top::after {
+    background: #bde9fc;
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 720px;
+    width: 100%;
 }
 
-.top {
-    background-color: #bde9fc;
+.top__image {
+    background: url(../images/team.png) center no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
 .top__container {
-    height: 672px;
+    height: 688px;
     width: 1020px;
     display: flex;
     margin: auto;
-    background-image: url(../images/team.png);
-    background-size: cover;
 }
 
 .info {
@@ -236,7 +242,6 @@ ul {
 
 .footer__bg {
     display: flex;
-    margin-top: 1470px;
     width: 100%;
     background-color: #f7033c;
     height: 134px;
