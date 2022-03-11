@@ -76,26 +76,29 @@ ul {
     font-size: 48px;
     color: #565656;
     line-height: 1.2;
-    width: 570px;
-    margin: 57px auto auto 40px;
+    width: 535px;
+    height: 170px;
+    margin: 57px 0 0 40px;
 }
 
-.main {
-    color:#000;
-}
-
-.top {
-    background-color: #bde9fc;
-}
-
-.top__image{
+.top::after {
+    background: #bde9fc;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    content: '';
+    top: 0;
+    height: 720px;
+    width: 100%;
+    z-index: -1;
+}
+
+.top__image {
+    background-image: url(../images/team.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .top__container {
-    height: 640px;
+    height: 688px;
     width: 1020px;
     display: flex;
     margin: auto;
