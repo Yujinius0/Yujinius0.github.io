@@ -71,16 +71,6 @@ ul {
     border-bottom: 2px solid #fff;
 }
 
-.title {
-    font-weight: normal;
-    font-size: 48px;
-    color: #565656;
-    line-height: 1.2;
-    width: 535px;
-    height: 170px;
-    margin: 57px 0 0 40px;
-}
-
 .top::after {
     background: #bde9fc;
     position: absolute;
@@ -101,6 +91,16 @@ ul {
     width: 1020px;
     display: flex;
     margin: auto;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 48px;
+    color: #565656;
+    line-height: 1.2;
+    width: 535px;
+    height: max-content;
+    margin: 57px 0 0 40px;
 }
 
 .info {
