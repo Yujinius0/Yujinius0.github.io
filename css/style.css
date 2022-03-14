@@ -89,7 +89,7 @@ ul {
 .top__container {
     height: 688px;
     width: 1020px;
-    display: flex;
+    display: table;
     margin: auto;
 }
 
