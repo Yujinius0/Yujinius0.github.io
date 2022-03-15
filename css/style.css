@@ -89,7 +89,8 @@ ul {
 .top__container {
     height: 688px;
     width: 1020px;
-    display: table;
+    display: flex;
+    align-items: flex-start;
     margin: auto;
 }
 
@@ -99,7 +100,6 @@ ul {
     color: #565656;
     line-height: 1.2;
     width: 535px;
-    height: max-content;
     margin: 57px 0 0 40px;
 }
 
