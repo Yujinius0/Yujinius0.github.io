@@ -71,11 +71,15 @@ ul {
     border-bottom: 2px solid #fff;
 }
 
+.top {
+    position: relative;
+}
+
 .top::after {
     background: #bde9fc;
     position: absolute;
     content: '';
-    top: 80px;
+    top: 0;
     height: 640px;
     width: 100%;
 }
