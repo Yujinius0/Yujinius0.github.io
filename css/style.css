@@ -90,6 +90,7 @@ ul {
     height: 688px;
     width: 1020px;
     display: flex;
+    align-items: flex-start;
     margin: auto;
 }
 
@@ -100,7 +101,6 @@ ul {
     line-height: 1.2;
     width: 535px;
     margin: 57px 0 0 40px;
-    align-self: flex-start;
 }
 
 .info {
