@@ -108,8 +108,8 @@ ul {
 }
 
 .info {
+    display: inline;
     width: 1020px;
-    margin: auto;
     text-align: center;
     padding-top: 40px;
 }
@@ -118,37 +118,35 @@ ul {
     color: #ff3333;
     font-size: 30px;
     line-height: 1.2;
-    margin: auto;
     margin-bottom: 19px;
 }
 
 .line {
     background-color: #ff3333;
-    margin: auto;
     width: 95px;
     height: 3px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .info__content {
     font-size: 20px;
     line-height: 1.2;
-    margin: auto;
-    margin-top: 24px;
-    margin-bottom: 56px;
+    margin: 24px auto 56px;
     width: 660px;
 }
 
-.table__team {
+.team {
     display: flex;
     margin-bottom: 37px;
     justify-content: center;
 }
 
-.table__cell + .table__cell {
+.team__block + .team__block {
     margin-left: 20px;
 }
 
-.table__cell {
+.team__block {
     display: flex;
     justify-content: center;
     background-color: #dddd;
@@ -166,10 +164,12 @@ ul {
 .name {
     color: #ff3333;
     margin-top: 16px;
+    text-transform: uppercase;
 }
 
-.table__forma {
+.list__forma {
     display: flex;
+    padding-right: 50px;
     margin-bottom: 37px;
     justify-content: center;
     align-items: baseline;
@@ -181,7 +181,6 @@ ul {
 
 .forma {
     width: 140px;
-    margin-left: -46px;
 }
 
 .forma__title { 
