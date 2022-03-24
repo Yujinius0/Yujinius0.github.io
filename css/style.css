@@ -155,8 +155,6 @@ ul {
 }
 
 .team__block {
-    display: flex;
-    justify-content: center;
     background-color: #dddddd;
     width: 220px;
     height: 220px;
