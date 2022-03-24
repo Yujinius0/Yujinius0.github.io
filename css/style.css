@@ -119,14 +119,22 @@ ul {
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 19px;
+    font-weight: normal;
 }
 
-.line {
+.info__title--line {
+    position: relative;
+}
+
+.info__title--line::after {
     background-color: #ff3333;
+    position: absolute;
+    content: '';
     width: 95px;
     height: 3px;
-    margin-left: 50%;
+    left: 50%;
     transform: translateX(-50%);
+    top: 48px;
 }
 
 .info__content {
@@ -149,7 +157,7 @@ ul {
 .team__block {
     display: flex;
     justify-content: center;
-    background-color: #dddd;
+    background-color: #dddddd;
     width: 220px;
     height: 220px;
 }
