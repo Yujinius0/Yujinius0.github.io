@@ -134,7 +134,7 @@ ul {
     height: 3px;
     left: 50%;
     transform: translateX(-50%);
-    top: 48px;
+    top: 4вскаяpx;
 }
 
 .info__content {
@@ -155,8 +155,6 @@ ul {
 }
 
 .team__block {
-    display: flex;
-    justify-content: center;
     background-color: #dddddd;
     width: 220px;
     height: 220px;
