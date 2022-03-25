@@ -28,7 +28,7 @@ a {
     background-color: #f7033c;
 }
 
-.header__container {
+.container {
     padding-left: 57px;
     width: 1020px;
     display: flex;
@@ -194,32 +194,11 @@ ul {
     line-height: 1.125;
 }
 
-.footer__bg {
-    display: flex;
-    width: 100%;
-    background-color: #f7033c;
-    height: 134px;
-}
-
 .footer {
     background-color: #f7033c;
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer__line {
-    display: flex;
-    height: 134px;
-    width: 100%;
 }
 
 .inline {
     font-size: 14px;
     line-height: 1.2;
-    left: 40px;
-    margin-bottom: 0%;
-    margin-top: 85px;
-    margin-left: -200px;
 }
