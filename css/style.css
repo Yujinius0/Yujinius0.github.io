@@ -28,7 +28,7 @@ a {
     background-color: #f7033c;
 }
 
-.header__container {
+.container {
     padding-left: 57px;
     width: 1020px;
     display: flex;
@@ -71,196 +71,134 @@ ul {
     border-bottom: 2px solid #fff;
 }
 
+.top {
+    position: relative;
+}
+
+.top::after {
+    background: #bde9fc;
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 640px;
+    width: 100%;
+}
+
+.top__image {
+    background: url(../images/team.png) center no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.top__container {
+    height: 688px;
+    width: 1020px;
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+}
+
 .title {
     font-weight: normal;
     font-size: 48px;
     color: #565656;
     line-height: 1.2;
-    width: 570px;
+    width: 535px;
     margin: 57px 0 0 40px;
 }
 
-.main {
-    width: 100%
-}
-
-.top {
-    background-color: #bde9fc;
-}
-
-.top__container {
-    height: 672px;
-    width: 1020px;
-    display: flex;
-    margin: auto;
-    background-image: url(../images/team.png);
-    background-size: cover;
-}
-
 .info {
-    display: block;
+    display: inline;
+    width: 1020px;
     text-align: center;
     padding-top: 40px;
 }
 
 .info__title {
+    color: #ff3333;
     font-size: 30px;
-    color: rgb(255, 51, 51);
     line-height: 1.2;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 30px;
+    margin-bottom: 19px;
+    font-weight: normal;
 }
 
-.line {
-    display: block;
-    margin-top: -20px;
+.info__title--line {
+    position: relative;
+}
+
+.info__title--line::after {
+    background-color: #ff3333;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    content: '';
     width: 95px;
     height: 3px;
-    background-color: rgb(255, 51, 51);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 48px;
 }
 
 .info__content {
-    display: flex;
-    margin-left: 180px;
     font-size: 20px;
-    color: rgb(0, 0, 0);
     line-height: 1.2;
+    margin: 24px auto 56px;
     width: 660px;
-    padding-bottom: 56px;
 }
 
-.table__team {
+.team {
     display: flex;
-    padding-bottom: 40px;
-    margin-left: 160px;
+    margin-bottom: 37px;
+    justify-content: center;
 }
 
-.table__cell+.table__cell {
+.team__block + .team__block {
     margin-left: 20px;
 }
 
-.table__cell {
-    display: flex;
-    justify-content: center;
-    background-color: #dddd;
+.team__block {
+    background-color: #dddddd;
     width: 220px;
     height: 220px;
 }
 
-.first {
-    background-image: url(../images/1tr.png);
+.avatar {
     border-radius: 50%;
     width: 128px;
     height: 128px;
     margin-top: 12px;
 }
 
-.second {
-    background-image: url(../images/2tr.png);
-    border-radius: 50%;
-    width: 128px;
-    height: 128px;
-    margin-top: 12px;
+.name {
+    color: #ff3333;
+    margin-top: 16px;
+    text-transform: uppercase;
 }
 
-.third {
-    background-image: url(../images/3tr.png);
-    border-radius: 50%;
-    width: 128px;
-    height: 128px;
-    margin-top: 12px;
-}
-
-.name__1 {
+.list__forma {
     display: flex;
-    padding-top: 140px;
-    font-weight: 700;
-    width: 220px;
-    color: rgb(255, 51, 51);
-    margin: 0;
-    margin-left: -10px;
+    padding-right: 50px;
+    margin-bottom: 37px;
+    justify-content: center;
+    align-items: baseline;
 }
 
-.name__2 {
-    display: flex;
-    padding-top: 140px;
-    font-weight: 700;
-    width: 220px;
-    color: rgb(255, 51, 51);
-    margin: 0;
-    margin-left: -22px;
-}
-
-.name__3 {
-    display: flex;
-    padding-top: 140px;
-    font-weight: 700;
-    width: 220px;
-    color: rgb(255, 51, 51);
-    margin: 0;
-    margin-left: -4px;
-}
-
-.subtitle {
-    color: black;
-    margin: 0;
-    font-weight: 600;
-}
-
-.table__forma {
-    display: flex;
-    padding-bottom: 40px;
-    margin-left: 200px;
-}
-
-.forma+.forma {
-    margin-left: 40px;
+.forma + .forma {
+    margin-left: 30px;
 }
 
 .forma {
     width: 140px;
-    margin-left: -20px;
 }
 
-.forma__title {
-    margin: 0;    
+.forma__title { 
     font-size: 16px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
     line-height: 1.125;
-}
-
-.footer__bg {
-    display: flex;
-    margin-top: 1470px;
-    width: 100%;
-    background-color: #f7033c;
-    height: 134px;
 }
 
 .footer {
     background-color: #f7033c;
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer__line {
-    display: flex;
-    height: 134px;
-    width: 100%;
 }
 
 .inline {
     font-size: 14px;
     line-height: 1.2;
-    left: 40px;
-    margin-bottom: 0%;
-    margin-top: 85px;
-    margin-left: -200px;
 }
