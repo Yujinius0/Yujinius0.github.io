@@ -296,20 +296,13 @@ ul {
 
 @media (max-width: 480px) {
     .container {
-        display: table;
+        display: list-item;
         height: 60px;
     }
     
-    .logo {
-        justify-content: flex-start;
-    }
-
+    .logo,
     .list {
         justify-content: flex-start;
-    }
-
-    .list__link--small--screen {
-        display: none;
     }
 
     .top::after {
@@ -345,7 +338,7 @@ ul {
 
     .name {
         margin-top: 0;
-        font-size: 13px ;
+        font-size: 13px;
     }
 
     .list__forma {
@@ -354,11 +347,15 @@ ul {
     }
 
     .forma + .forma {
-        margin: 30px 0 0 0 ;
+        margin: 30px 0 0 0;
     }
 
     .container__footer {
         height: 55px;
+    }
+
+    footer a.list__link {
+        display: none;
     }
 }
 
