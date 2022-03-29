@@ -296,7 +296,7 @@ ul {
 
 @media (max-width: 480px) {
     .container {
-        display: list-item;
+        display: block;
         height: 60px;
     }
     
